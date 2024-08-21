@@ -1,0 +1,93 @@
+:root {
+    /* Major Third typescale */
+    --h1: 2.986rem;
+    --h2: 2.488rem;
+    --h3: 2.074rem;
+    --h4: 1.728rem;
+    --h5: 1.44rem;
+    --h6: 1.2rem;
+    --p: 1rem;
+    --caption: 0.833rem;
+    font-family: Tahoma, sans-serif;
+
+    /* Color palette */
+    --primary: #334b5f;
+    --secondary: #507594;
+    --neutral-black: #06080F;
+    --neutral-white: #ECEBE6;
+
+    background-color: var(--neutral-white);
+    color: var(--neutral-black);
+}
+
+h1 {
+    font-size: var(--h1);
+}
+
+h2 {
+    font-size: var(--h2);
+}
+
+h3 {
+    font-size: var(--h3);
+}
+
+h4 {
+    font-size: var(--h4);
+}
+
+h5 {
+    font-size: var(--h5);
+}
+
+h6 {
+    font-size: var(--h6);
+}
+
+p {
+    font-size: var(--p);
+    line-height: 150%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+/* Header styles */
+.header {
+    background-color: var(--primary);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 16px;
+    margin: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.nav-links a {
+    text-decoration: none;
+    color: var(--neutral-white);
+    font-size: var(--h6);
+}
+
+.hml-logo {
+    width: 50px;
+    color: var(--neutral-white);
+}
+
+#name {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: var(--neutral-white);
+    text-decoration: none;
+    font-size: var(--h5);
+    font-weight: 800;
+}

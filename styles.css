@@ -143,10 +143,22 @@ h1, h2, h3, h4, h5, h6, p {
     justify-items: center;
 }
 
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    max-width: var(--content-width);
+}
+
 @media (width <= 750px) {
-    .card-content {
+    .card-content, .card-grid {
         grid-template-columns: 1fr;
     }
+}
+
+.app-card-content {
+    display: flex;
+    flex-direction: column;
 }
 
 .thumb-container {
@@ -168,6 +180,14 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 16px;
     justify-content: flex-start;
     max-width: 600px;
+}
+
+.description img {
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 32px;
+    margin: auto;
 }
 
 .tags {

@@ -4,37 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HoMei's Portfolio</title>
-    <link rel="icon" type="image" href="../images/icons/HML-Logo-32.png">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image" href="../../images/icons/HML-Logo-32.png">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <section class="header">
         <div class="nav-bar">
             <div class="logo">
-                <a id="name" href="../index.html">
-                    <img class="hml-logo" href="../index.html" src="../images/icons/HML-Logo-White.svg">
+                <a id="name" href="../../index.html">
+                    <img class="hml-logo" href="../../index.html" src="../../images/icons/HML-Logo-White.svg">
                     HoMei Leung
                 </a>
             </div>
             <div class="nav-links">
-                <a href="../design.html">Design</a>
-                <a href="../development.html">Development</a>
-                <a href="../about.html">About</a>
+                <a href="../../design.html">Design</a>
+                <a href="../../development.html">Development</a>
+                <a href="../../about.html">About</a>
             </div>
         </div>
     </section>
 
     <section class="app">
-       
+        <h1>USA Telephone Number Validator</h1>
+        <div class="container">
+            <div id="keypad">
+                <div id="input-box">
+                    <input type="text" id="user-input" placeholder="Enter a phone number." required>
+                    <img id="valid" class="icon" alt="valid icon" src="../../images/telephone-number-validator/Checkmark.svg" hidden>
+                    <img id="invalid" class="icon" alt="invalid icon" src="../../images/telephone-number-validator/Xmark.svg" hidden>
+                </div>
+                <div id="keys">
+                    <button class="dial-key" id="key1" value="1">1</button>
+                    <button class="dial-key" id="key2" value="2">2</button>
+                    <button class="dial-key" id="key3" value="3">3</button>
+                    <button class="dial-key" id="key4" value="4">4</button>
+                    <button class="dial-key" id="key5" value="5">5</button>
+                    <button class="dial-key" id="key6" value="6">6</button>
+                    <button class="dial-key" id="key7" value="7">7</button>
+                    <button class="dial-key" id="key8" value="8">8</button>
+                    <button class="dial-key" id="key9" value="9">9</button>
+                    <button class="dial-key" id="keyStar" value="*">*</button>
+                    <button class="dial-key" id="key0" value="0">0</button>
+                    <button class="dial-key" id="keyPound" value="#">#</button>
+                    <button id="check-btn"><img alt="check button" id="submit" src="../../images/telephone-number-validator/Phone.svg"></button>
+                    <button id="delete-btn"><img alt="clear button" id="delete" src="../../images/telephone-number-validator/Backspace.svg"></button>
+                </div>
+            </div>
+            <button id="clear-btn">Clear</button>
+            <div id="results-div">
+            </div>
+        </div>
+        <script src="script.js"></script>
     </section>
 
     <section class="footer">
         <div class="socials">
             <a href="https://www.linkedin.com/in/homeileung/" class="icon" target="_blank">
-                <img src="../images/icons/jam_linkedin_white.svg" alt="LinkedIn icon">
+                <img src="../../images/icons/jam_linkedin_white.svg" alt="LinkedIn icon">
             </a>
             <a href="https://github.com/homei-leung" class="icon" target="_blank">
-                <img src="../images/icons/jam_github_white.svg" alt="GitHub icon">
+                <img src="../../images/icons/jam_github_white.svg" alt="GitHub icon">
             </a>
         </div>
         <p class="copyright">(c) 2024 HoMei Leung</p>

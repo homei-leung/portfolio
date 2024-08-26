@@ -3,38 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HoMei's Portfolio</title>
-    <link rel="icon" type="image" href="../images/icons/HML-Logo-32.png">
-    <link rel="stylesheet" href="../styles.css">
+    <title>HoMei's Portfolio | Cash Register</title>
+    <link rel="icon" type="image" href="../../images/icons/HML-Logo-32.png">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <section class="header">
         <div class="nav-bar">
             <div class="logo">
-                <a id="name" href="../index.html">
-                    <img class="hml-logo" href="../index.html" src="../images/icons/HML-Logo-White.svg">
+                <a id="name" href="../../index.html">
+                    <img class="hml-logo" href="../../index.html" src="../../images/icons/HML-Logo-White.svg">
                     HoMei Leung
                 </a>
             </div>
             <div class="nav-links">
-                <a href="../design.html">Design</a>
-                <a href="../development.html">Development</a>
-                <a href="../about.html">About</a>
+                <a href="../../design.html">Design</a>
+                <a href="../../development.html">Development</a>
+                <a href="../../about.html">About</a>
             </div>
         </div>
     </section>
 
     <section class="app">
-       
+        <h1>Cash Register</h1>
+        <div id="cash-register">
+            <p id="total"></p>
+            <div id="two-column-grid">
+                <div id="register-info">
+                    <input id="cash" placeholder="Cash received">
+                    <button id="purchase-btn">Purchase</button>
+                    <div id="change-drawer">
+                    </div>
+                </div>
+                <div id="change-due">  
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
     </section>
 
     <section class="footer">
         <div class="socials">
             <a href="https://www.linkedin.com/in/homeileung/" class="icon" target="_blank">
-                <img src="../images/icons/jam_linkedin_white.svg" alt="LinkedIn icon">
+                <img src="../../images/icons/jam_linkedin_white.svg" alt="LinkedIn icon">
             </a>
             <a href="https://github.com/homei-leung" class="icon" target="_blank">
-                <img src="../images/icons/jam_github_white.svg" alt="GitHub icon">
+                <img src="../../images/icons/jam_github_white.svg" alt="GitHub icon">
             </a>
         </div>
         <p class="copyright">(c) 2024 HoMei Leung</p>

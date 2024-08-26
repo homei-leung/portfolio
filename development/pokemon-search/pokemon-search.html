@@ -5,36 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HoMei's Portfolio</title>
     <link rel="icon" type="image" href="../images/icons/HML-Logo-32.png">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <section class="header">
         <div class="nav-bar">
             <div class="logo">
                 <a id="name" href="../index.html">
-                    <img class="hml-logo" href="../index.html" src="../images/icons/HML-Logo-White.svg">
+                    <img class="hml-logo" href="../../index.html" src="../../images/icons/HML-Logo-White.svg">
                     HoMei Leung
                 </a>
             </div>
             <div class="nav-links">
-                <a href="../design.html">Design</a>
-                <a href="../development.html">Development</a>
-                <a href="../about.html">About</a>
+                <a href="../../design.html">Design</a>
+                <a href="../../development.html">Development</a>
+                <a href="../../about.html">About</a>
             </div>
         </div>
     </section>
 
     <section class="app">
-       
+        <h1>Pokemon Search App</h1>
+        <div class="pokedex">
+            <img src="../../images/pokemon-search-app/Rotom-Phone.svg" class="rotom-phone">
+            <div id="screen">
+                <p>Search for Pokemon name or ID:</p>
+                <form id="search">
+                        <input type="text" id="search-input" placeholder="Ex: Pikachu" required>
+                        <button id="search-button">Search</button>
+                </form>
+                <div class="data-container">
+                    <div class="name-and-id">
+                      <span id="pokemon-name"></span>
+                      <span id="pokemon-id"></span>
+                    </div>
+                    <div class="size">
+                      <span id="weight"></span>
+                      <span id="height"></span>
+                    </div>
+                    <div id="sprite-div"></div>
+                    <div id="types"></div>
+                </div>
+                <div class="stats">
+                    <table>
+                        <tr>
+                            <th>Base</th>
+                            <th>Stats</th>
+                        </tr>
+                        <tr>
+                            <td>HP:</td>
+                            <td id="hp"></td>
+                        </tr>
+                        <tr>
+                            <td>Attack:</td>
+                            <td id="attack"></td>
+                        </tr>
+                        <tr>
+                            <td>Defense:</td>
+                            <td id="defense"></td>
+                        </tr>
+                        <tr>
+                            <td>Sp. Attack:</td>
+                            <td id="special-attack"></td>
+                        </tr>
+                        <tr>
+                            <td>Sp. Defense:</td>
+                            <td id="special-defense"></td>
+                        </tr>
+                        <tr>
+                            <td>Speed:</td>
+                            <td id="speed"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
     </section>
 
     <section class="footer">
         <div class="socials">
             <a href="https://www.linkedin.com/in/homeileung/" class="icon" target="_blank">
-                <img src="../images/icons/jam_linkedin_white.svg" alt="LinkedIn icon">
+                <img src="../../images/icons/jam_linkedin_white.svg" alt="LinkedIn icon">
             </a>
             <a href="https://github.com/homei-leung" class="icon" target="_blank">
-                <img src="../images/icons/jam_github_white.svg" alt="GitHub icon">
+                <img src="../../images/icons/jam_github_white.svg" alt="GitHub icon">
             </a>
         </div>
         <p class="copyright">(c) 2024 HoMei Leung</p>

@@ -35,26 +35,207 @@
     </section>
 
     <section class="banner">
-        <h1>Project Name</h1>
-        <p>
-            Short description of project
-        </p>
+        <div class="container">
+            <h1>MyMed</h1>
+            <p>
+                An iOS and Android native app that helps people manage their medical records.
+            </p>
+        </div>
     </section>
 
     <section class="container" id="situation">
         <h2>Situation</h2>
+        <h3>People seeking new doctors find maintaining and sharing a full medical history burdensome, but necessary to receive appropriate care.</h3>
+        <div class="flex">
+            <div>
+                <img src="../../images/mymed/icon-papers.svg">
+                <h4>Too many paper forms</h4>
+                <p>
+                    Traditional methods require people to keep a rarely opened folder full of papers.
+                </p>
+            </div>
+
+            <div>
+                <img src="../../images/mymed/icon-hospital.svg">
+                <h4>Partner hospital account</h4>
+                <p>
+                    Patient portal apps can store future medical data, but does not provide a way to upload historical documents before the first visit.
+                </p>
+            </div>
+
+            <div>
+                <img src="../../images/mymed/icon-write.svg">
+                <h4>Extensive data entry</h4>
+                <p>
+                    Existing medical record apps require extensive data entry from users, and can be time-consuming.
+                </p>
+            </div>
+        </div>
     </section>
 
     <section class="container" id="task">
         <h2>Task</h2>
+        <h3>Help people digitize and share their documents with medical providers and monitor their health at a glance.</h3>
+        <div class="flex">
+            <div>
+                <img src="../../images/mymed/icon-doctor.svg">
+                <h4>Find a doctor</h4>
+                <p>
+                    Locate nearby medical providers with your phone's GPS system and schedule an appointment.
+                </p>
+            </div>
+
+            <div>
+                <img src="../../images/mymed/icon-doc.svg">
+                <h4>Maintain medical history</h4>
+                <p>
+                    View, update, and share your medical history with your doctors. Use biometric sign-in for added security.
+                </p>
+            </div>
+
+            <div>
+                <img src="../../images/mymed/icon-chart.svg">
+                <h4>Track health indicators</h4>
+                <p>
+                    Visualize and understand vital signs and overall health with color-coded charts.
+                </p>
+            </div>
+        </div>
     </section>
 
     <section class="container" id="action">
         <h2>Action</h2>
+
+        <div class="subsection">
+            <h3>User Flows</h3>
+            <div class="grid">
+                <div>
+                    <h4>Share medical history</h4>
+                    <p>
+                        Press a share button and complete a short form that requires a recipient, agreement, and signature.
+                    </p>
+                </div>
+
+                <div>
+                    <h4>Track vital signs</h4>
+                    <p>
+                        Enter data on the charts page using short forms. There will also be an option to connect smart devices for people who monitor their vitals regularly.
+                    </p>
+                </div>
+
+                <div>
+                    <h4>Add medical history</h4>
+                    <p>
+                        Input notes manually, or take a photo of the document that will be scanned and processed by the app. 
+                    </p>
+                </div>
+
+                <div>
+                    <h4>Find a doctor</h4>
+                    <p>
+                        Search the map page to find nearby medical professionals. The search results can be browed and selected to make an appointment.
+                    </p>
+                </div>
+            </div>
+
+            <img src="../../images/mymed/MyMed-userflow.png">
+        </div>
+
+        <div class="subsection">
+            <h3>Wireframes</h3>
+            <p>
+                Wireframes for each screen were built using the iOS and Material guidelines. In this step, I learned about the key differences in UI elements such as the font and styles of tab bars, text fields, and buttons. The challenge I had with this step was determining the equivalent terminology to use when searching for guidelines. For example, since there are no cards in the iOS design system I needed to look at guidelines for boxes and collections.
+            </p>
+            <img src="../../images/mymed/MyMed-wireframes.png">
+        </div>
+
+        <div class="subsection">
+            <h3>Testing</h3>
+            <p>
+                I set up a prototype for each platform and tested it with 3 iOS users and 4 Android users to see if my design worked. Some users found the first task confusing due to copy on the dashboard screen that read, "My Doctors: Contact and schedule an appointment". This confusion could be resolved by changing the copy of the "My Doctors" card.
+            </p>
+            <img src="../../images/mymed/MyMed-testresults.png">
+        </div>
+
+        <div class="subsection">
+            <h3>Revisions</h3>
+            <p>
+                Users gave feedback on some mistakes I had made in the design, such as not allowing users to find a doctor if they did not allow location tracking. They also commented on wanting more pop-ups for reminders and confirmations, as well as reconfiguring the dashboard cards to reduce confusion or improve visibility. More specifically, some users thought that the vital sign card was easily confused with the charts tab.
+            </p>
+            <p>
+                Some other interface changes include improving the signaling for entering data and containing overflow text on the Terms & Conditions page.
+            </p>
+            <img src="../../images/mymed/MyMed-revisions.png">
+            <p>
+                I pursued all changes to make the design user-centric. Moving the dashboard navigation to the tab bar was not completed due to space limitations. One user also felt that the chart colors clashed with the design, but additional preference testing indicated that the rainbow palette was preferred to understand the information.
+            </p>
+        </div>
     </section>
 
     <section class="container" id="result">
         <h2>Result</h2>
+        <div class="grid">
+            <div>
+                <h3>Find a doctor</h3>
+                <p>
+                    To find a doctor, the user would press "Find a doctor" in the tab bar. As mentioned in the user flow, they would use the map page with a search bar to look for doctors. The resulting doctors are sorted by distance, with the nearest appearing first. Users can view basic information, like the doctor's practice location and contact number. The option to schedule a visit only populates for the selected doctor.
+                </p>
+                <p>
+                    In the schedule form, only the available appointment times populate to eliminate displaying unnecessary information. There is also a drop-down to filter out morning or afternoon appointments.
+                </p>
+            </div>
+            <img src="../../images/mymed/Find-a-dr-demo.gif">
+        </div>
+
+        <div>
+            <h3>Share medical history</h3>
+            <p>
+                To share medical history, people would press the share record button on the history page. To make the process easier, the user only needs to input a recipient, check off an agreement, and sign a signature field before submitting the form. The email subject and body text are pre-populated, but can also be customized.
+            </p>
+            <img src="../../images/mymed/share-medical-history.png">
+        </div>
+
+        <div class="grid">
+            <div>
+                <h3>Track health indicators</h3>
+                <p>
+                    On the charts page, people can view snapshot graphics and select a card to view more details. Data entry forms were kept short so that the user experience doesn't feel tedious.
+                </p>
+            </div>
+            <img src="../../images/mymed/Track-health-indicator-demo.gif">
+        </div>
+
+        <div class="subsection">
+            <h3>Launch the prototype</h3>
+            <p>
+                Select a platform to launch an interactive prototype in Figma.
+            </p>
+            <a href="https://www.figma.com/proto/LoB1bPwDnQhkdTIsDqSIL4/MyMed-Prototype---iOS?kind=&node-id=301-46310&page-id=301%3A45895&scaling=scale-down&starting-point-node-id=301%3A46310&viewport=476%2C2798%2C0.35" target="_blank">
+                <button class="cta">iOS</button>
+            </a>
+            <a href="https://www.figma.com/proto/SvNQUjGQ5QDgwoj27ZCq6s/MyMed-Prototype---Android?kind=&node-id=301-46425&page-id=301%3A45895&scaling=scale-down&starting-point-node-id=301%3A46425&viewport=306%2C1367%2C0.16" target="_blank">
+                <button class="cta">Android</button>
+            </a>
+        </div>
+
+        <div class="subsection">
+            <h3>Learnings</h3>
+            <div class="grid">
+                <div>
+                    <h4>Feedback and changes</h4>
+                    <p>
+                        Overall, users were able to complete the test scenario due to familiar iOS and Material design patterns. Additional preference testing helped me decide not to pursue a color palette change.
+                    </p>
+                </div>
+
+                <div>
+                    <h4>Next steps</h4>
+                    <p>
+                        For the next steps, I would develop screens for the dashboard cards and the "More" tab. I would also perform research for additional functionalities requested during user testing.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="footer">

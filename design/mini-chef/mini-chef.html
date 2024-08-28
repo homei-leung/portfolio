@@ -36,27 +36,172 @@
 
     <section class="banner">
         <div class="container">
-            <h1>Project Name</h1>
+            <h1>Mini Chef</h1>
             <p>
-                Short description of project
+                A responsive recipe web app that provides clear instruction through video, audio, and text
             </p>
         </div>
     </section>
 
     <section class="container" id="situation">
         <h2>Situation</h2>
+        <p>
+            Existing recipe apps lack visual content for in-process cooking steps, or include too much extraneous content that take focus away from the recipes. Some also have poor searchability and do not provide a quick unit conversion between metric and imperial measurements.
+        </p>
     </section>
 
     <section class="container" id="task">
         <h2>Task</h2>
+        <p>
+            Research, strategize, and design a responsive web app to provide step-by-step video, audio, and text instruction for a seamless learning experience. Add time-saving funcitonalities relevant to the full cooking experience.
+        </p>
     </section>
 
     <section class="container" id="action">
         <h2>Action</h2>
+        <div class="subsection">
+            <h3>Competitive analysis</h3>
+            <p>
+                Once the functionalities were determined, the layout of each screen was built using a grid system. Design principles and patterns, such as gathering user input, navigation, and feedback were applied. The screens were iterated to refine hierarchy and ensure UI elements were placed appropriately for a mobile platform. The home screen in particular went through several revisions.
+            </p>
+            <p>Takeaways:</p>
+            <ul>
+                <li>
+                    Users want diverse recipes without viewing duplicate results
+                </li>
+                <li>
+                    Users like clean interfaces without too many distractions
+                </li>
+                <li>
+                    Users want to be able to mark ingredients they already have for their recipes
+                </li>
+            </ul>
+            <img src="../../images/mini-chef/competitor-analysis.png">
+        </div>
+
+        <div class="subsection">
+            <h3>User interviews and personas</h3>
+            <p>
+                User interviews were conducted to gather a better understanding of their needs and goals related to using recipe apps. Personas were developed to help generate user scenarios that would be the foundation of the app's required functionalities.
+            </p>
+            <img src="../../images/mini-chef/personas.png">
+
+            <div class="grid">
+                <div>
+                    <h4>User preferences</h4>
+                    <p>Utilize video for in-process steps</p>
+                    <p>Easily search recipes</p>
+                    <p>Access recipe content quickly</p>
+                </div>
+                <div>
+                    <h4>User habits</h4>
+                    <p>Scaling up meals</p>
+                    <p>Using leftover ingredients</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="subsection">
+            <h3>Minimum viable product and user flows</h3>
+            <p>
+                A variety of user scenarios detailing jobs to be done were sorted into needs and wants. The needs were translated into required app features as part of the minimum viable product document.
+            </p>
+            <h4>App requirements:</h4>
+            <ul>
+                <li>Serving size adjuster</li>
+                <li>Controls for unit conversions</li>
+                <li>Replayable recipe copy, video, and audio</li>
+                <li>Save recipes into personal cookbook</li>
+                <li>Share through social media</li>
+                <li>Eye-catching photography</li>
+                <li>Quick search</li>
+            </ul>
+            <img src="../../images/mini-chef/userflow.png">
+        </div>
+
+        <div class="subsection">
+            <h3>Mood board</h3>
+            <p>
+                As a recipe learning app, Mini Chef needed to have a clean appearance that was organized and focused for users to stay on task. The app also needed a relaxed appearance to encourage users of all skill levels.
+            </p>
+            <img src="../../images/mini-chef/moodboard.png">
+        </div>
+
+        <div class="subsection">
+            <h3>Style guide</h3>
+            <p>
+                A style guide was developed for Mini Chef to ensure consistency between screens and as a good practice for maintaining styles for future updates.
+            </p>
+            <img src="../../images/mini-chef/style-guide.png">
+        </div>
+
+        <div class="subsection">
+            <h3>Testing</h3>
+            <div>
+                <h4>Low-fidelity wireframe prototypes</h4>
+                <p>
+                    Low-fidelity wireframes were drawn for each user flow using the Crazy 8's method to proiduce a variety of screens. The final wireframes were prototyped in marvel for user testing. Major discoveries from testing included that users found the search submission unintuitive and that they wanted to use the hamburger menu to access profile settings.
+                </p>
+                <img src="../../images/mini-chef/low-fi-testing.png">
+            </div>
+            <div>
+                <h4>Preference testing</h4>
+                <p>
+                    A preference test comparing a square card and rectangular card design indicated that the majority of users preferred square cards, resulting in a change of the design.
+                </p>
+                <img src="../../images/mini-chef/ab-test-result.png">
+            </div>
+        </div>
     </section>
 
     <section class="container" id="result">
         <h2>Result</h2>
+        <div class="grid">
+            <div>
+                <h3>Find a recipe</h3>
+                <p>
+                    When looking for a recipe on Mini Chef, users can search ingredients they already have at home, or try something new by selecting a recipe on the front page. Once a recipe has been selected, the yield can be adjusted in the ingredients list. Users can also share their favorite recipes with friends and family from the recipe page.
+                </p>
+            </div>
+
+            <img src="../../images/mini-chef/landing-mockup.png">
+
+            <img src="../../images/mini-chef/recipe-adjust-demo.gif">
+
+            <div>
+                <h3>Learn to cook</h3>
+                <p>
+                    On the recipe page, users can follow along in three ways: watching a video, listening to the instructions, or reading along. Each step can be played on loop until the user is ready to move on.
+                </p>
+            </div>
+
+            <div>
+                <h3>Curate your cookbook</h3>
+                <p>
+                    With an account, users can access two features. The first is the ability to curate their own cookbook by marking favorite recipes. The second is selection of a unit measurement preference in the profile settings page.
+                </p>
+            </div>
+
+            <img src="../../images/mini-chef/favorites-demo.gif">
+
+            <div>
+                <h3>Responsive design</h3>
+                <p>
+                    As a web app, Mini Chef needed to be responsive for mobile, tablet, and desktop screens. An adjusted design was made for each breakpoint.
+                </p>
+                <img src="../../images/mini-chef/responsive-design-mockup.png">
+            </div>
+
+            <div>
+                <h3>Learning</h3>
+                <p>Challenge assumptions</p>
+                <ul>
+                    <li>Preference test to determine if assumptions on design of UI elements are consistent with user preferences, such as the recipe cards.</li>
+                    <li>Low-fidelity prototypes will identify user pain points early on. For example, users wanted to access settings options through the hamburger icon instead of the profile icon.</li>
+                    <li>When working on a project, especially when you are a team of one, ask for peer feedback often to identify mistakes. Peers identified that users would want to pin the ingredients list for quick reference.</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <section class="footer">

@@ -178,13 +178,12 @@ h1, h2, h3, h4, h5, h6, p {
     flex-wrap: wrap;
     gap: var(--space-xs);
     padding: 16px;
-    justify-content: flex-start;
     max-width: 600px;
 }
 
 .description img {
     object-fit: contain;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     margin-bottom: 32px;
     margin: auto;
@@ -202,6 +201,10 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--neutral-white);
     padding: 8px;
     border-radius: 8px;
+}
+
+.stretch {
+    width: 100%;
 }
 
 /* Foooter styles */

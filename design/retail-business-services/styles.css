@@ -1,6 +1,6 @@
 .banner {
     background: 
-        linear-gradient(0deg, #3339, #0000),
+        linear-gradient(0deg, rgba(51, 51, 51, 0.8), #0000),
         url('../../images/retail-business-services/banner.png') no-repeat;
     background-size: cover;
 }

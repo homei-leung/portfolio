@@ -29,6 +29,11 @@
     --content-width: 1000px;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
     font-size: var(--h1);
 }

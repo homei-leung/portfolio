@@ -28,15 +28,11 @@ h4, h5, h6 {
     text-align: center;
 }
 
-.supporting-img {
-    width: 100%;
-}
-
 .guideline {
     max-width: 312px;
 }
 
-.supporting-img img , .guideline img {
+.guideline img {
     width: 100%;
 }
 
@@ -55,14 +51,4 @@ h4, h5, h6 {
 
 .pink {
     background-color: rgb(233, 223, 254);
-}
-
-.prototype-btn {
-    border-radius: 8px;
-    background-color: var(--neutral-black);
-    color: var(--neutral-white);
-    padding: 8px;
-    font-size: var(--p);
-    filter: drop-shadow(1px 1px 2px var(--neutral-black));
-    border: none;
 }

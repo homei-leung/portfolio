@@ -302,3 +302,14 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 800;
 }
 
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    margin: 32px 0;
+}
+
+.subsection {
+    margin: 48px 0;
+}

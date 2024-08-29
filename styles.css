@@ -53,7 +53,7 @@ h6 {
     font-size: var(--h6);
 }
 
-p {
+p, li {
     font-size: var(--p);
     line-height: 150%;
 }
@@ -149,7 +149,7 @@ h1, h2, h3, h4, h5, h6, p {
     justify-items: center;
 }
 
-.card-grid {
+.card-grid, .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
@@ -256,7 +256,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Media query */
 @media (width <= 750px) {
-    .card-content, .card-grid {
+    .card-content, .card-grid, .grid {
         grid-template-columns: 1fr;
     }
 
@@ -286,3 +286,19 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--neutral-white);
     font-size: var(--p);
 }
+
+/* Shared cased study styles */
+.banner {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+    color: var(--neutral-white);
+}
+
+.banner .container {
+    margin: var(--space-xxl) auto 0 auto;
+}
+
+.bold {
+    font-weight: 800;
+}
+
